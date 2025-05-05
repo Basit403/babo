@@ -24,7 +24,9 @@ const ListPage = () => {
       <Filter />
       {/* PRODUCTS */}
       <h1 className='mt-12 text-xl font-semibold'>Shoes For You</h1>
-      <ProductList />
+      <ProductList categoryId={process.env.FEATURED_PRODUCTS_CATEGORY_ID!} 
+        limit={4} 
+      />
     </div>
   )
 }
