@@ -1,9 +1,7 @@
 import Slider from "@/components/Slider"
 import ProductList from "@/components/ProductList"
 import CategoryList from "@/components/CategoryList"
-import { usewixClient } from "@/hooks/useWixClient"
-import { useEffect, Suspense } from "react"
-import { wixClientServer } from "@/lib/wixClientServer"
+import { Suspense } from "react"
 
 
 const HomePage = async () => {
