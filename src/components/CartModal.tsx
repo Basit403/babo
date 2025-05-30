@@ -25,7 +25,7 @@ const CartModal = () => {
                     <div className='flex flex-col gap-8'>
                         {/* ITEMS */}
                         {cart.lineItems.map((item)=> ( 
-                            <div className='flex gap-4 key={item._id}'>
+                            <div className='flex gap-4' key={item._id}>
                                 {item.image && (
                                 <Image 
                                     src={wixMedia.getScaledToFillImageUrl(item.image,72,96,{})}
@@ -60,8 +60,8 @@ const CartModal = () => {
                     {/* B0TTOM */}
                     <div className=''>
                         <div className='flex items-center justify-between font-semibold'>
-                            <span className=''>Subtotal</span>
-                            <span className=''>₦{cart.subtotal.amount}</span>
+                            <span className=''>Currency</span>
+                            <span className=''>{cart.currency}</span>
                         </div>    
                         <p className='text-grray-500 text-sm mt-2 mb-4'>
                             Shipping and taxes calculated at checkout.
